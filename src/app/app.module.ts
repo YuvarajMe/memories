@@ -8,12 +8,14 @@ import { LoginComponent } from './login/login.component';
 
 import { AppRoute } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

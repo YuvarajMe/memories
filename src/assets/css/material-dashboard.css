@@ -1572,8 +1572,8 @@ h2.title {
   }
 }
 body {
-  /*background-color: #EEEEEE;*/
-  background-color: #fff;
+  background-color: #EEEEEE;
+  /*background-color: #fff;*/
   color: #3C4858;
   min-height: 100vh;
 }
@@ -5507,3 +5507,4 @@ footer .btn {
     margin-right: -20px;
   }
 }
+
