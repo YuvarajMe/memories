@@ -24,6 +24,12 @@
             style="float:right">{{memory.total_comment}}</span></p>
 
     <div  style="max-height: 330px; overflow: auto;" [hidden]="!memory.showComment">
+        <div style="text-align: center" [hidden] = !memory.isMemoryLoading>
+            <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
+            <p>loading comments...</p>
+        </div>
         <div *ngFor="let comment of memory.comments" class="col-md-12" style="margin-bottom: 15px;">
             <div class="col-md-1" style="text-align: center">
                 <img src="assets/img/new_logo.png" class="img" width="60px" height="60px"/>
