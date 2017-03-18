@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+<div class="col-md-12" style="margin-top: 120px;">
+
+    <section class="col-md-8">
+        <router-outlet></router-outlet>
+    </section>
+
+    <section class="col-md-3 tags-card tags-card-1">
+        <h3>Trending Tags</h3>
+        <hr/>
+
+        <div class="tags-list">
+            <div *ngFor="let tag of tags">
+                <p><a href="">#{{tag}}</a></p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+    <p class="plus">+</p>
+    <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+</div>

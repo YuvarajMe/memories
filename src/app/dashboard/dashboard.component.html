@@ -1,0 +1,22 @@
+<div class="col-md-12 material-card m-c-card-1" *ngFor="let memory of memories">
+    <span title="{{memory.posted_date}}" style="margin-top: 25px;" class="pull-right">{{memory.posted_date | amTimeAgo}}</span>
+    <p class="pull-right">
+        <i class="material-icons" style="margin-top: 22px; margin-right: 10px">update</i>
+    </p>
+
+    <h3>{{ memory.title }}</h3>
+
+    <p>This ia a test description</p>
+    <hr/>
+
+    <span *ngFor="let tag of memory.tags">
+        <a href="">#{{tag}}</a> &nbsp;
+    </span>
+
+    <br/><br/>
+
+
+    <div class="placeholder-test-image"></div>
+    <hr/>
+    <p class="pull-right"><i class="material-icons" style="margin-right: 5px">comment</i><span style="float:right">{{memory.total_comment}}</span></p>
+</div>
