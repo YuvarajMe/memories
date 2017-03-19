@@ -1,0 +1,12 @@
+<div class="col-md-12" style="background-color: white">
+
+    <div style="text-align: center">
+        <h3><a style="color: rgb(58, 159, 182);">{{ memory.title }}</a></h3>
+        <p>{{memory.description}}</p>
+    </div>
+    <hr/>
+    <div class="col-md-4" *ngFor="let eachImage of memory.images">
+        <a href="" [routerLink]="['../../memory/image/', eachImage.id]"><div class="placeholder-test-each-memory-image"></div></a>
+    </div>
+
+</div>

@@ -12,14 +12,4 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  tags:any = [
-      'NewYear',
-      'Diwali',
-      'Christmas',
-      'Fun',
-      'Celebration',
-      'Cake',
-      'Birthday',
-      'Flowers'
-  ]
 }

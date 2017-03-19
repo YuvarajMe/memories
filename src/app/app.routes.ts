@@ -7,6 +7,8 @@ import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {HomeComponent} from "./home/home.component";
+import {MemoriesComponent} from "./memories/memories.component";
+import {ImageComponent} from "./image/image.component";
 
 export const AppRoute:Routes = [
     {
@@ -24,6 +26,14 @@ export const AppRoute:Routes = [
             {
                 path: 'dashboard',
                 component: DashboardComponent
+            },
+            {
+                path: 'memories/:id',
+                component: MemoriesComponent
+            },
+            {
+                path: 'memory/image/:id',
+                component: ImageComponent
             }
         ]
     }

@@ -14,6 +14,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import {MomentModule} from 'angular2-moment';
+import { MemoriesComponent } from './memories/memories.component';
+import { ImageComponent } from './image/image.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import {MomentModule} from 'angular2-moment';
     DashboardComponent,
     SidebarComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    MemoriesComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

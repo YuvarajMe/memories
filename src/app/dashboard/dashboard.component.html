@@ -1,44 +1,62 @@
-<div class="col-md-12 material-card m-c-card-1" *ngFor="let memory of memories">
+<div class="col-md-8">
+    <div *ngFor="let memory of memories" class="material-card m-c-card-1">
     <span title="{{memory.posted_date}}" style="margin-top: 25px;"
           class="pull-right">{{memory.posted_date | amTimeAgo}}</span>
-    <p class="pull-right">
-        <i class="material-icons" style="margin-top: 22px; margin-right: 10px">update</i>
-    </p>
+        <p class="pull-right">
+            <i class="material-icons" style="margin-top: 22px; margin-right: 10px">update</i>
+        </p>
 
-    <h3>{{ memory.title }}</h3>
+        <h3><a style="color: rgb(58, 159, 182)" [routerLink]="['../memories', memory.id]">{{ memory.title }}</a></h3>
 
-    <p>This ia a test description</p>
-    <hr/>
+        <p>This ia a test description</p>
+        <hr/>
 
-    <span *ngFor="let tag of memory.tags">
+        <span *ngFor="let tag of memory.tags">
         <a href="">#{{tag}}</a> &nbsp;
     </span>
 
-    <br/><br/>
+        <br/><br/>
 
 
-    <div class="placeholder-test-image"></div>
-    <hr/>
-    <p class="pull-right"><i class="material-icons" (click)="toggleComment(memory)"
-                             style="margin-right: 5px">comment</i><span
-            style="float:right">{{memory.total_comment}}</span></p>
+        <div class="placeholder-test-image"></div>
+        <hr/>
+        <p class="pull-right"><i class="material-icons" (click)="toggleComment(memory)"
+                                 style="margin-right: 5px">comment</i><span
+                style="float:right">{{memory.total_comment}}</span></p>
 
-    <div  style="max-height: 330px; overflow: auto;" [hidden]="!memory.showComment">
-        <div style="text-align: center" [hidden] = !memory.isMemoryLoading>
-            <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-            </svg>
-            <p>loading comments...</p>
-        </div>
-        <div *ngFor="let comment of memory.comments" class="col-md-12" style="margin-bottom: 15px;">
-            <div class="col-md-1" style="text-align: center">
-                <img src="assets/img/new_logo.png" class="img" width="60px" height="60px"/>
+        <div style="max-height: 330px; overflow: auto;" [hidden]="!memory.showComment">
+            <div style="text-align: center" [hidden]=!memory.isMemoryLoading>
+                <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+                            r="30"></circle>
+                </svg>
+                <p>loading comments...</p>
             </div>
-            <div class="col-md-10">
-                <h4>Sha</h4>
-                {{comment.comment}}
+            <div *ngFor="let comment of memory.comments" class="col-md-12" style="margin-bottom: 15px;">
+                <div class="col-md-1" style="text-align: center">
+                    <img src="assets/img/new_logo.png" class="img" width="60px" height="60px"/>
+                </div>
+                <div class="col-md-10">
+                    <h4>Sha</h4>
+                    {{comment.comment}}
+                </div>
             </div>
         </div>
     </div>
+    </div>
 
-</div>
+<section class="col-md-3 tags-card tags-card-1">
+    <h3>Trending Tags</h3>
+    <hr/>
+
+    <div class="tags-list">
+        <div *ngFor="let tag of tags">
+            <p><a href="">#{{tag}}</a></p>
+        </div>
+    </div>
+</section>
+
+<!--<div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">-->
+    <!--<p class="plus">+</p>-->
+    <!--<img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">-->
+<!--</div>-->
