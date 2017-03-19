@@ -7,4 +7,11 @@
 3.  Run npm install.
 4.  Run ng serve in command line.
 
+### Login :
+
 ![Login](https://s4.postimg.org/j4s2f902l/login.jpg)
+
+
+### Home Page : 
+
+![HomePage](/src/assets/img/screenshots/home.jpeg)
