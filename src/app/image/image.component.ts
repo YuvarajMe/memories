@@ -46,7 +46,7 @@ export class ImageComponent implements OnInit {
             image.showComment = !image.showComment;
         }
 
-        
+
         setTimeout(function () {
 
             image.isCommentLoading = false;

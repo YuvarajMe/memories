@@ -14,4 +14,18 @@
 
 ### Home Page : 
 
-![HomePage](/src/assets/img/screenshots/home.jpeg)
+
+![HomePage](https://s24.postimg.org/vdfjt1lkl/home.jpg)
+
+
+
+### Memories Comments :
+
+![Memories Comments](https://s17.postimg.org/auu2vrhcv/memory_comments.jpg)
+
+
+
+### Memory Photos : 
+
+![Memory Photos](https://s7.postimg.org/ybyr2j7fv/individual_memory_photos.jpg)
+
