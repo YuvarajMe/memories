@@ -9,6 +9,7 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
 import {HomeComponent} from "./home/home.component";
 import {MemoriesComponent} from "./memories/memories.component";
 import {ImageComponent} from "./image/image.component";
+import {TagComponent} from "./tag/tag.component";
 
 export const AppRoute:Routes = [
     {
@@ -34,6 +35,10 @@ export const AppRoute:Routes = [
             {
                 path: 'memory/image/:id',
                 component: ImageComponent
+            },
+            {
+                path: 'tag/:name',
+                component: TagComponent
             }
         ]
     }

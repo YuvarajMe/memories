@@ -24,6 +24,11 @@
                                  style="margin-right: 5px">comment</i><span
                 style="float:right">{{memory.total_comment}}</span></p>
 
+        <div>
+            <input type="text" class="form-control" placeholder="please type your comment..." >
+            <button type="button" class="btn btn-primary" value="Post">Post</button>
+        </div>
+
         <div style="max-height: 330px; overflow: auto;" [hidden]="!memory.showComment">
             <div style="text-align: center" [hidden]=!memory.isMemoryLoading>
                 <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
