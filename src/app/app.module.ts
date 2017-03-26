@@ -17,6 +17,7 @@ import {MomentModule} from 'angular2-moment';
 import { MemoriesComponent } from './memories/memories.component';
 import { ImageComponent } from './image/image.component';
 import { TagComponent } from './tag/tag.component';
+import {sharedService} from "./shared.service";
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { TagComponent } from './tag/tag.component';
     HomeComponent,
     MemoriesComponent,
     ImageComponent,
-    TagComponent
+    TagComponent,
   ],
   imports: [
     BrowserModule,
