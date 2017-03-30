@@ -17,7 +17,8 @@ import {MomentModule} from 'angular2-moment';
 import { MemoriesComponent } from './memories/memories.component';
 import { ImageComponent } from './image/image.component';
 import { TagComponent } from './tag/tag.component';
-import {sharedService} from "./shared.service";
+import {EqualValidator} from "./register/equal.validator.directive";
+// import {sharedService} from "./shared.service";
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import {sharedService} from "./shared.service";
     MemoriesComponent,
     ImageComponent,
     TagComponent,
+    EqualValidator
   ],
   imports: [
     BrowserModule,
