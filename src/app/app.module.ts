@@ -17,7 +17,7 @@ import {MomentModule} from 'angular2-moment';
 import { MemoriesComponent } from './memories/memories.component';
 import { ImageComponent } from './image/image.component';
 import { TagComponent } from './tag/tag.component';
-import {EqualValidator} from "./register/equal.validator.directive";
+import {EqualValidator} from "./equal.validator.directive";
 // import {sharedService} from "./shared.service";
 
 

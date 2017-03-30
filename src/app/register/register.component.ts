@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {User} from "../user.interface";
 
 @Component({
     selector: 'app-register',
@@ -16,12 +17,4 @@ export class RegisterComponent implements OnInit {
     ngOnInit() {
     }
 
-}
-
-interface User
-{
-    name: string;
-    email: string;
-    password: string;
-    confirmPassword: string;
 }

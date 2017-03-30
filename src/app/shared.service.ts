@@ -5,13 +5,12 @@ export class sharedService {
 
     loggedIn:boolean = false;
 
-    isLoggedIn = function () {
+    isLoggedIn() : boolean {
         return this.loggedIn;
     };
 
-    updateLoginStatus = function (status) {
-        console.log('updating status to ' + status);
+    updateLoginStatus(status) : void {
         this.loggedIn = status;
-        console.log(this.loggedIn);
     }
+
 }
