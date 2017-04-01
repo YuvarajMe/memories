@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DashboardService }  from "./dashboard.service";
+import {NgbModal, NgbModalOptions} from '@ng-bootstrap/ng-bootstrap';
+import {CreateMemoryComponent} from "./create-memory/create-memory.component";
 
 @Component({
     selector: 'app-dashboard',
@@ -10,7 +12,7 @@ import { DashboardService }  from "./dashboard.service";
 })
 export class DashboardComponent implements OnInit {
 
-    constructor(private dashboardService: DashboardService) {
+    constructor(private dashboardService: DashboardService, private modalService: NgbModal) {
     }
 
     ngOnInit() {
@@ -91,5 +93,10 @@ export class DashboardComponent implements OnInit {
         }
 
 
+    };
+
+    copenModalToCreateMemory() {
+        var options:NgbModalOptions = {size : 'lg'};
+        const modalRef = this.modalService.open(CreateMemoryComponent, options);
     }
 }
